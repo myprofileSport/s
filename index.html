@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en-US">    
+    <head>
+        <meta charset="utf-8">       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0"> 
+        <title>Hitesh portfolio index</title>
+        <link rel="stylesheet" href="css/myStyle.css">
+<!---------------------- google font load---------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<!---------------------- Custom box-icon link---------------------------->
+        <link rel="stylesheet"  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<!---------------------- Custom typed-speed link---------------------------->       
+<!---------------------- Custom typed-speed link---------------------------->       
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<!---------------------- Custom Scroll-Smooth link---------------------------->    
+<!---------------------- Custom Scroll-Smooth link---------------------------->    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!---------------------- AOS animation link----------------------------> 
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script>
+            $(document).ready(function(){
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    // Store hash
+                    var hash = this.hash;
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){                
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                    } // End if
+                });
+            });
+        </script>
+    </head>
+    <body>
+<!---------------------- Header Section ---------------------------->
+        <header>
+            <a href="#" class="logo"><img src="images/logo.png" alt="Logo"></a>
+            <ul class="navbar" id="myNavBarId">
+                <li><a href="#home" class='active'>Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#test">Testimonial</a></li>
+            </ul>
+            <div class="header-btn">
+                <a href="#contact" class="nav-btn">
+                    <i class="bx bxs-phone-call"></i>Let's Talk
+                </a>   
+                <div id="menu-icon"></div>     
+            </div>
+        </header>
+<!---------------------- Home Section ---------------------------->
+<section class="home" id="home">
+    <div class="home-txt" data-aos="fade-down" data-aos-duration="1400">
+       <h4>Hello I'm<img src="images/hi.png"></h4>
+       <h1>HITESH RAJBANSHI</h1>
+       <h3>And I am a - <span class="input ">Gra</span></h3>
+       <p>Enthusiastic art teacher with eight years of experience creating dynamic and engaging art
+lessons for school students. Expert in various art mediums including painting,
+drawing, and digital art. Adept at fostering creativity and artistic expression in students of all
+skill levels.</p>
+    
+        <div class="home-icon">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-dribbble"></i></a>
+        </div>
+        <div class="home-btn">
+            <a href="#" class="hm-btn">How I, work<span><i class="bx bx-right-arrow-alt"></i></span></a>
+        </div>
+    </div>
+    <div class="home-img" data-aos="zoom-in" data-aos-duration="1400">
+        <img src="images/homePhoto_art.png" alt="home photo">
+    </div>    
+</section>
+<!---------------------- Infinite Scroll ---------------------------->
+    <div class="infinite">
+        <div class="infi-logo">
+            <img src="images/logo-port.png" alt="">
+            <img src="images/logo-port.png" alt="">
+            <img src="images/logo-port.png" alt="">
+            <img src="images/logo-port.png" alt="">
+            <img src="images/logo-port.png" alt="">
+            <img src="images/logo-port.png" alt="">
+            <img src="images/logo-port.png" alt="">
+        </div>        
+    </div>
+<!---------------------- About Section ---------------------------->
+<section class="about" id="about">
+    <div class="main-about">
+        <div class="about-img" data-aos="zoom-in" data-aos-duration="1400">
+            <img src="images/aboutPhoto.png" alt="about photo">
+        </div>
+        <div class="about-txt" data-aos="fade-down" data-aos-duration="1400">
+            <h5>About Us</h5>
+            <h2>Creating Enjoyable <span>Digital</span> <br> Solutions From Business <br> Ideas</h2>
+            <p>I love UI design because it aligns with what I do best. I am open to exploring  new experiences and ideas and always ready to increase my own knoledge.</p>
+            <div class="about-li">
+                <div class="ab-li-1">
+                    <h6><i class="bx bx-right-arrow-circle"></i>Avoid These Mistakes</h6>
+                    <h6><i class="bx bx-right-arrow-circle"></i>Your New Venture</h6>
+                    <h6><i class="bx bx-right-arrow-circle"></i>New Fonts</h6>
+                </div>
+                <div class="ab-li-2">
+                    <h6><i class="bx bx-right-arrow-circle"></i>Beyound The Norm</h6>
+                    <h6><i class="bx bx-right-arrow-circle"></i>Forge Destiny</h6>
+                    <h6><i class="bx bx-right-arrow-circle"></i>Dare To Be Different</h6>
+                </div>                
+            </div>
+            <div class="home-btn" id='downloadBtn'>
+                <a href="#" class="hm-btn">Download CV<span><i class="bx bxs-cloud-download"></i></span></a>
+            </div>         
+        </div>
+    </div>
+</section>
+<!---------------------- Expert Area Section ---------------------------->
+<section class="areas" id="service">
+    <div class="areas-top" data-aos="fade-down" data-aos-duration="1400">
+        <h1>My Expert Areas</h1>
+        <p>Frontend Development is creating the UI of the web pages. It deals with displaying the data sent by the backend in an interactive and easy-to-read format.</p>
+    </div>
+    <div class="skill-details">
+        <div class="box" data-aos="fade-down" data-aos-duration="1400">
+            <div class="box-img">
+                <img src="images/skil_1.png" alt="skilLogo">
+                <h4>90%</h4>
+            </div>
+            <h3>Photoshop</h3>
+        </div>
+        <div class="box" data-aos="fade-down" data-aos-duration="1400">
+            <div class="box-img">
+                <img src="images/skil_2.png" alt="skilLogo">
+                <h4>75%</h4>
+            </div>
+            <h3>Illistrator</h3>
+        </div><div class="box" data-aos="fade-down" data-aos-duration="1400">
+            <div class="box-img">
+                <img src="images/skil_3.png" alt="skilLogo">
+                <h4>80%</h4>
+            </div>
+            <h3>Figma</h3>
+        </div><div class="box" data-aos="fade-down" data-aos-duration="1400">
+            <div class="box-img">
+                <img src="images/skil_4.png" alt="skilLogo">
+                <h4>82%</h4>
+            </div>
+            <h3>Html</h3>
+        </div><div class="box" data-aos="fade-down" data-aos-duration="1400">
+            <div class="box-img">
+                <img src="images/skil_5.png" alt="skilLogo">
+                <h4>78%</h4>
+            </div>
+            <h3>Css</h3>
+        </div><div class="box" data-aos="fade-down" data-aos-duration="1400">
+            <div class="box-img">
+                <img src="images/skil_6.png" alt="skilLogo">
+                <h4>60%</h4>
+            </div>
+            <h3>Javascript</h3>
+        </div>
+    </div>
+</section>
+<!---------------------- Recent Project Section ---------------------------->
+<section class="recent-project" id="project">
+    <div class="project-top" data-aos="fade-down" data-aos-duration="1400">
+        <h5>My Portfolio</h5>
+        <h2>Review my <span>Latest</span> projects</h2>
+        <div class="project-list" data-aos="fade-down" data-aos-duration="1400">
+            <a class="active" href="#">All</a>
+            <a href="#">Branding</a>
+            <a href="#">Development</a>
+            <a href="#">Design</a>
+        </div>
+    </div>
+    <div class="main-project">
+        <div class="project" data-aos="fade-up" data-aos-duration="1400">
+            <img src="images/thumbLinks_1.jpg" alt="portfolio photo">            
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-duration="1400">
+            <img src="images/thumbLinks_2.jpg" alt="portfolio photo">            
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-duration="1400">
+            <img src="images/thumbLinks_3.jpg" alt="portfolio photo">            
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-duration="1400">
+            <img src="images/thumbLinks_4.jpg" alt="portfolio photo">            
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-duration="1400">
+            <img src="images/thumbLinks_5.jpg" alt="portfolio photo">            
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-duration="1400">
+            <img src="images/thumbLinks_6.jpg" alt="portfolio photo">            
+        </div>
+    </div>
+    <div class="popup-img">
+        <span>&times;</span>
+        <img class='lThumb' src="images/LargeThumb_1.jpg" alt="Hanuman Temple">  
+        <img class='lThumb' src="images/LargeThumb_2.jpg" alt="Hanuman Temple">  
+        <img class='lThumb' src="images/LargeThumb_3.jpg" alt="Hanuman Temple">  
+        <img class='lThumb' src="images/LargeThumb_4.jpg" alt="Hanuman Temple">  
+        <img class='lThumb' src="images/LargeThumb_5.jpg" alt="Hanuman Temple">  
+        <img class='lThumb' src="images/LargeThumb_6.jpg" alt="Hanuman Temple">
+    </div>
+</section>
+<!---------------------- Client Project Section ---------------------------->
+<section class="client-say" id="test">
+    <div class="client-top" data-aos="fade-up" data-aos-duration="1400">
+        <h5>Testimonial</h5>
+        <h2>What My <span>Client</span> Say</h2>
+    </div>
+    <div class="client-details">
+        <div class="test-card" data-aos="fade-up" data-aos-duration="1400">
+            <div class="test-top">
+                <div class="test-logo">
+                    <img src="images/clntLogo_1.png" alt="client Logo">
+                </div>
+                <div class="test-img">
+                    <img src="images/clientPhoto_1.jpg" alt="client thumbnail">
+                </div>
+            </div>
+            <div class="test-btm">
+                <a href="#">
+                    <i class="bx bxs-caret-right-square"></i>
+                </a>
+                <p>*Companies like Google, Facebook, Netflix, LinkedIn, 
+                    and many more rely on top-notch front-end developers to build.</p>
+                <h4>Harry P</h4>
+                <h6>SEO Specialist, Adv agency</h6>
+            </div>
+        </div>
+
+        <div class="test-card" data-aos="fade-up" data-aos-duration="1400">
+            <div class="test-top">
+                <div class="test-logo">
+                    <img src="images/clntLogo_2.png" alt="client Logo">
+                </div>
+                <div class="test-img">
+                    <img src="images/clientPhoto_2.jpg" alt="client thumbnail">
+                </div>
+            </div>
+            <div class="test-btm">
+                <a href="#">
+                    <i class="bx bxs-caret-right-square"></i>
+                </a>
+                <p>*Companies like Google, Facebook, Netflix, LinkedIn, 
+                    and many more rely on top-notch front-end developers to build.</p>
+                <h4>Neo Doy</h4>
+                <h6>CEO, Dairy Production</h6>
+            </div>
+        </div> 
+        <div class="test-card" data-aos="fade-up" data-aos-duration="1400">
+            <div class="test-top">
+                <div class="test-logo">
+                    <img src="images/clntLogo_3.png" alt="client Logo">
+                </div>
+                <div class="test-img">
+                    <img src="images/clientPhoto_3.jpg" alt="client thumbnail">
+                </div>
+            </div>
+            <div class="test-btm">
+                <a href="#">
+                    <i class="bx bxs-caret-right-square"></i>
+                </a>
+                <p>*Companies like Google, Facebook, Netflix, LinkedIn, 
+                    and many more rely on top-notch front-end developers to build.</p>
+                <h4>P Chermon</h4>
+                <h6>SEA D, Aqua World</h6>
+            </div>
+        </div>        
+    </div>
+</section>
+<!---------------------- Contact Page Section ---------------------------->
+<section class="contact" id="contact">
+    <div class="cont-top" data-aos="fade-up" data-aos-duration="1400">
+        <h2>Let's Work <span>Togather</span></h2>
+        <p>*Companies like Google, Facebook, Netflix, LinkedIn, 
+                    and many more rely on top-notch front-end developers to build.</p>
+    </div>
+    <div class="main-cont" data-aos="fade-up" data-aos-duration="1400">
+        <form action="#">
+            <div class="cont-input" data-aos="fade-up" data-aos-duration="1400">
+                <input type="name" placeholder="Name" required>
+                <input type="name" placeholder="Lasr Namme" required>
+            </div>
+            <div class="cont-input" data-aos="fade-up" data-aos-duration="1400">
+                <input type="name" placeholder="Email Address" required>
+                <input type="name" placeholder="Phone Number" required>
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Type your message" data-aos="fade-up" data-aos-duration="1400"></textarea>
+        </form>
+        <input type="submit" value="submit" class="sub" data-aos="fade-up" data-aos-duration="1400">
+    </div>   
+</section>
+<!---------------------- Footer Page Section ---------------------------->
+<div class="footer">
+    <div class="main-footer" data-aos="zoom-in" data-aos-duration="1400">
+        <div class="main-img">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="footer-li" data-aos="fade-right" data-aos-duration="1400">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Services</a>
+            <a href="#project">Project</a>
+            <a href="#test">Testimonial</a>            
+        </div>
+        <p  data-aos="zoom-in" data-aos-duration="1400">@ 2024 All Rights Reserved by HR foundation</p>
+    </div>
+</div>
+<!---------------------- Custom javaScript link---------------------------->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:1,
+    });
+  </script>
+        <script src="js/myJsFile.js"></script>
+    </body>
+</html>
